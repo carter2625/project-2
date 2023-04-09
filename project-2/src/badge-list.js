@@ -56,7 +56,7 @@ export class BadgeList extends LitElement {
 }
 .explore-container {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   background-color: #d3dce4;
   display: flex;
   flex-direction: column;
@@ -75,17 +75,10 @@ export class BadgeList extends LitElement {
 	border: none;
 	background-color: #fff;
 	font-size: 16px;
-	width: 60%;
+	width: 80%;
   margin: 0 10px 0 0;
 }
-.search-container button {
-	background-color: #4CAF50;
-	color: white;
-	padding: 10px 20px;
-	border: none;
-	cursor: pointer;
-	font-size: 16px;
-}
+
 .badge {
 	background-color: #4CAF50;
 	color: #fff;
@@ -124,16 +117,13 @@ header {
   display: flex;
   align-items: center;
 }
-#search-input {
-  margin-right: 10px;
-  width: calc(100% - 120px);
-}
-#search-button {
-  margin-left: 10px;
-}
+
 .content-wrapper {
   overflow-y: scroll;
   height: 100vh;
+}
+.searchBar {
+  width: 500px;
 }
 
 .badgeList{

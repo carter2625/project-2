@@ -24,13 +24,13 @@ class SearchBar extends LitElement {
     
       constructor() {
         super();
-        this.value = 'Search Content, Topics, and People';
+        this.value = "";
       }
     
       render() {
         return html`
           <simple-icon icon="icons:search"></simple-icon>
-          <input type="text" value="${this.value}" @input="${this._handleInput}" />
+          <input type="text" placeholder = "Search Content, Topics, and People" value="${this.value}" @input="${this._handleInput}" />
         `;
       }
       _handleInput(e) {
